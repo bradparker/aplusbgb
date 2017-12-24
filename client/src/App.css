@@ -1,0 +1,48 @@
+.App {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.App:before {
+  content: '';
+  background-image: url(./trees.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 110vh;
+  width: 110vw;
+}
+
+.App-header {
+  padding: 3rem;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.App-header:before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 110vh;
+  width: 110vw;
+  background-image: url(./trees.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: blur(10px);
+}
+
+.App-title {
+  position: relative;
+  font-size: 3em;
+}
